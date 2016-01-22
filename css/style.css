@@ -5,3 +5,13 @@
 circle {
   fill: #393;
 }
+
+.custom-beige {
+  color: #000;
+  background-color: #fafabb;
+}
+
+.custom-green {
+  color: #fff;
+  background-color: #393;
+}

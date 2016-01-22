@@ -19,7 +19,6 @@ var lastD = Date.now();
 
 function animation() {
   var d = new Date();
-  var ms = d.getMilliseconds();
   angle += (Date.now() - lastD) * 0.05;
   if (angle > 360) {
     angle -= 360;

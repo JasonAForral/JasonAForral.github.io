@@ -2,7 +2,7 @@ var svgContainer = d3.select('#demo').append('svg');
 
 svgContainer
   .attr('width', 360)
-  .attr('height', 360);
+  .attr('height', 180);
 
 var circles = svgContainer.selectAll('circle')
   .data([60, 180, 300])
@@ -12,7 +12,7 @@ var circles = svgContainer.selectAll('circle')
 var circleAttributes = circles
   .attr('cx', function (d) {return d;})
   .attr('cy', 180)
-  .attr('r', 45);
+  .attr('r', 20);
 
 var angle = 0;
 var lastD = Date.now();
@@ -28,8 +28,11 @@ function animation() {
   document.getElementById('time').innerHTML = d.toLocaleTimeString();
   var radians = (angle / 180 * Math.PI);
   circleAttributes.attr('cy', function (d) {
-    return Math.sin( d - radians) * 60 + 180;
+    return Math.sin( d - radians) * 60 + 90;
   });
 }
 
+
 var repeater = setInterval(animation, 20);
+
+$(document).foundation();

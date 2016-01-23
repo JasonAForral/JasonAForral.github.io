@@ -1,17 +1,7 @@
-.demo {
-  text-align: center;
-}
-
+/*.demo {
+  margin-left: auto;
+  margin-right: auto;
+}*/
 circle {
-  fill: #393;
-}
-
-.custom-beige {
-  color: #000;
-  background-color: #ffc;
-}
-
-.custom-green {
-  color: #fff;
-  background-color: #393;
+  fill: #6a6;
 }

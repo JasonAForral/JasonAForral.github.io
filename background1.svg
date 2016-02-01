@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
     <style type="text/css">
-        line { stroke: #ccc; stroke-width: 1; }
+        .hatch-line { stroke: #ccc; stroke-width: 1; }
     </style>
     <defs>
         <pattern id="grid1" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(6)">
-            <line x1="5" y1="0" x2="5" y2="10" />
+            <line class="hatch-line" x1="5" y1="0" x2="5" y2="10" />
         </pattern>
         <pattern id="grid2" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(-6)">
-            <line x1="5" y1="0" x2="5" y2="10" />
+            <line class="hatch-line" x1="5" y1="0" x2="5" y2="10" />
         </pattern>
     </defs>
     <rect width="100%" height="100%" fill="url(#grid1)" />

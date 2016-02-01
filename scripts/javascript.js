@@ -24,7 +24,7 @@ function animation() {
     angle -= 360;
   }
   lastD = Date.now();
-  document.getElementById('date').innerHTML = d.toDateString();
+  
   document.getElementById('time').innerHTML = d.toLocaleTimeString();
   var radians = (angle / 180 * Math.PI);
   circleAttributes.attr('cy', function (d) {
@@ -34,5 +34,26 @@ function animation() {
 
 
 var repeater = setInterval(animation, 20);
+
+function displayDate() {
+var now = new Date();
+
+var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+
+var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+
+function fourdigits(number)	{
+  return (number < 1000) ? number + 1900 : number;
+}
+return days[now.getDay()] + ", " +
+         months[now.getMonth()] + " " +
+         date + ", " +
+         (fourdigits(now.getYear())) ;
+
+}
+
+document.getElementById('date').innerHTML = displayDate();
 
 $(document).foundation();

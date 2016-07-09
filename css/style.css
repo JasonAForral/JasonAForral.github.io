@@ -1,11 +1,50 @@
-/*.demo {
-  margin-left: auto;
-  margin-right: auto;
-}*/
-
 body {
-  font-family: Helvetica, Arial, sans-serif
+  background: #66cc88;
+  position: relative;
 }
-circle {
-  fill: #6a6;
+
+.section {
+  min-height: 820px;
+  padding-top: 100px;
+}
+
+.home {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="cirlces" patternUnits="userSpaceOnUse" width="80" height="80" patternTransform="rotate(-40)"><g><circle cx="25" cy="25" r="10" stroke="#5bc87f" fill="none" stroke-width="4" /><circle cx="55" cy="55" r="10" stroke="#5bc87f" fill="none" stroke-width="4" /><animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360 40 40" to="0 40 40" dur="10s" repeatCount="indefinite"/></g></pattern></defs><rect width="100%" height="100%" fill="url(#cirlces)" /></svg>');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 200px;
+}
+
+.about {
+  background: #339955 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="lines" patternUnits="userSpaceOnUse" width="80" height="80" patternTransform="rotate(-40)"><g><line x1="40" x2="40" y1="0" y2="80" stroke="#329553" stroke-width="40" /></g><animateTransform attributeName="patternTransform" attributeType="XML" type="rotate" from="0 500 500" to="360 500 500" dur="300s" repeatCount="indefinite"/></pattern></defs><rect width="100%" height="100%" fill="url(#lines)" ></rect></svg>');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.portfolio {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="cirlces" patternUnits="userSpaceOnUse" width="70" height="70"><circle cx="15" cy="15" r="10" stroke="#5ec982" fill="none" stroke-width="4" /><circle cx="50" cy="50" r="10" stroke="#6ecf8e" fill="none" stroke-width="4" /><animateTransform attributeName="patternTransform" attributeType="XML" type="translate" from="0 0" to="140 70" dur="6s" repeatCount="indefinite"/></pattern></defs><rect width="100%" height="100%" fill="url(#cirlces)" /></svg>');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.contact {
+  background: #339955 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="cirlces" patternUnits="userSpaceOnUse" width="70" height="70" patternTransform="rotate(-3)"><circle cx="14" cy="15" r="25" stroke="#329553" fill="none" stroke-width="4" /><circle cx="54" cy="15" r="25" stroke="#329553" fill="none" stroke-width="4" /><circle cx="14" cy="54" r="25" stroke="#329553" fill="none" stroke-width="4" /><circle cx="54" cy="54" r="25" stroke="#329553" fill="none" stroke-width="4" /><animateTransform attributeName="patternTransform" attributeType="XML" type="rotate" from="0 500 500" to="360 500 500" dur="300s" repeatCount="indefinite"/></pattern></defs><rect width="100%" height="100%" fill="url(#cirlces)" /></svg>');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.jumbotron, .navbar {
+  background: #c6ecd2;
+}
+
+.nav li:hover, .btn:hover {
+  background: #b3e6c4;
+}
+
+.navbar-inner .nav li.active a {
+  color: yellow;
 }

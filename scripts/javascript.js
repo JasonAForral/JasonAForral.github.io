@@ -11,11 +11,11 @@
       url: "http://codepen.io/Tsinoyboi/full/eJzxEZ",
       img: "images/RandomQuoteMachine.png",
     },
-    {
-      name: "Weather App",
-      url: "http://codepen.io/Tsinoyboi/full/rxboXK",
-      img: "images/WeatherApp.png",
-    },
+    // {
+    //   name: "Weather App",
+    //   url: "http://codepen.io/Tsinoyboi/full/rxboXK",
+    //   img: "images/WeatherApp.png",
+    // },
     {
       name: "Wikiquery",
       url: "http://codepen.io/Tsinoyboi/full/OMdrqg",

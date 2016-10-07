@@ -53,3 +53,9 @@ h2 {
   padding: 20px;
   border-radius: 5px
 }
+
+#face {
+  width: 200px;
+  border-radius: 50%;
+  float: right;
+} 

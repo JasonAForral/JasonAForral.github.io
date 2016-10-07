@@ -4,7 +4,7 @@ body {
 }
 
 .section {
-  min-height: 820px;
+  /*min-height: 20px;*/
   padding-top: 100px;
 }
 
@@ -50,6 +50,6 @@ body {
 }
 h2 {
   background: white;
-  padding: 6px;
+  padding: 20px;
   border-radius: 5px
 }

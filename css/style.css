@@ -48,11 +48,11 @@ body {
 .navbar-inner .nav li.active a {
   /*color: yellow;*/
 }
-h2 {
+/*h2 {
   background: white;
   padding: 20px;
   border-radius: 5px
-}
+}*/
 
 #face {
   width: 200px;

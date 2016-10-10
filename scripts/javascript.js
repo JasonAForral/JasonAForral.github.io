@@ -70,6 +70,22 @@
     link.appendChild(caption).appendChild(h3)
 
     portfolioContainer.appendChild(item)
+
+    // let $div = $('<div>')
+    // .attr('class', 'thumbnail col-xs-12 col-sm-6 col-md-4')
+    // .appendTo('body')
+
+    // let $anchor = $('<a>')
+    // .attr('href', data.url)
+    // .appendTo($div)
+
+    // $('<img>')
+    // .attr('src', data.img)
+    // .attr('title', data.name)
+    // .attr('alt', data.name)
+    // .appendTo($anchor)
+
+
   }
 
   function populatePortfolio(data) {

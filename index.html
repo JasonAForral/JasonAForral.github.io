@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jason A Forral | on GitHub</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel='stylesheet prefetch' href='
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
@@ -17,13 +19,13 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
             aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
+        </button>-->
           <a class="navbar-brand" href="#">Jason A. Forral</a>
           <a class="navbar-brand" target="_blank" href="https://linkedin.com/in/JasonAForral"><i class="fa fa-linkedin fa-lg"></i></a>
           <a class="navbar-brand" target="_blank" href="https://github.com/JasonAForral"><i class="fa fa-github fa-lg"></i></a>
@@ -42,36 +44,42 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
 
   <main role="main" id="main">
     <div id="home" class="section topface">
-      <div class="container">
-        <div class="jumbotron text-center">
-          <h1>Jason A. Forral</h1>
-          <p></p>
-          <div class="row">
+      <div class="jumbotron topface-text">
+        <h1 id="topface-h1">Jason A. Forral</h1>
+        <p></p>
+        <ul id="topface-links">
+          <li>
             <div class="col-sm-2 col-sm-offset-2 col-xs-12">
               <a class="btn btn-default" target="_blank" href="https://twitter.com/JasonAForral"><i class="fa fa-twitter"></i> Twitter</a>
             </div>
+          </li>
+          <li>
             <div class="col-sm-2 col-xs-12">
               <a class="btn btn-default" target="_blank" href="https://github.com/JasonAForral"><i class="fa fa-github"></i> Github</a>
             </div>
+          </li>
+          <li>
             <div class="col-sm-2 col-xs-12">
               <a class="btn btn-default" target="_blank" href="https://linkedin.com/in/JasonAForral"><i class="fa fa-linkedin"></i> Linkedin</a>
             </div>
+          </li>
+          <li>
             <div class=" col-sm-2 col-xs-12">
               <a class="btn btn-default" target="_blank" href="https://freecodecamp.com/JasonAForral"><i class="fa fa-fire"></i> freeCodeCamp</a>
             </div>
-          </div>
-        </div>
+          </li>
       </div>
+    </div>
     </div>
 
     <div id="about" class="section about">
-      <div class="container">
-        <div class="panel panel-default text-left">
+      <div class="container wrapper">
+        <div class="panel panel-default text-right">
           <div class="panel-heading">
             <h2>About me</h2>
           </div>
           <div class="panel-body">
-            <img id="face" src="images/face4.jpg" />
+            <div id="faceHolder"><img id="face" src="images/face4.jpg" /></div>
             <p>I have been programming since before learning Algebra, experimenting with every documentation example in QBasic. Later
               on, I discovered subprocedures and functional programming. I learned some C++ with object oriented programming in
               high school and some Visual Basic in college. I earned an Associate's Applied Science degree in Computer Information
@@ -92,7 +100,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
     </div>
 
     <div id="portfolio" class="section portfolio">
-      <div class="container">
+      <div class="container wrapper">
         <div class="panel panel-default text-left">
           <div class="panel-heading">
             <h2>Portfolio</h2>
@@ -106,10 +114,10 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
     </div>
 
     <div id="contact" class="section contact">
-      <div class="container">
+      <div class="container wrapper">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h1>Contact</h1>
+            <h2>Contact</h2>
           </div>
           <div class="panel-body">
             <div class="col-sm-3 col-sm-offset-9">
@@ -125,14 +133,16 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
       </div>
     </div>
 
+    <div id="return-to-top"><a href="#">top</a></div>
+
   </main>
   <footer>
-    <div class="container">2016 Jason Forral
+    <div class="container wrapper">2016 Jason Forral
     </div>
   </footer>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js'></script>
+  <!--<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>-->
   <script src="scripts/javascript.js"></script>
 </body>
 

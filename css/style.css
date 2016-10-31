@@ -1,61 +1,336 @@
-body {
-  background: #3366cc;
-  position: relative;
+/** {
+    background: rgba(17,17,17, 0.05);
+}*/
+
+html {
+  color: #222222;
+  font: 300 14px/24px "Open Sans", open-sans, sans-serif;
+  overflow-y: scroll;
+  height: 100%;
+  background: #222222;
+  box-sizing: border-box;
+  letter-spacing: 0.03em;
 }
+
+body {
+  background: white;
+}
+
+h1 {
+  font: 400 100px/1 "Open Sans", open-sans, sans-serif;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  z-index: 101;
+
+}
+
+a {
+  color: #225522;
+  text-decoration: none
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #008800;
+}
+
+p {
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+/* classes */
+  
+.topface {
+  position: relative;
+  display: table;
+  height: 300px;
+  height: 70vh;
+  width: 100%;
+  padding: 0 0 60px;
+  font: 400 30px/1 'Open Sans', open-sans, sans-serif;
+  font: 400 2vw/1  'Open Sans', open-sans, sans-serif;
+}
+
+/*.topface-image {
+
+}*/
 
 .section {
-  /*min-height: 20px;*/
-  padding-top: 100px;
+  padding: 20px 0;
 }
 
-.home {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="cirlces" patternUnits="userSpaceOnUse" width="80" height="80" patternTransform="rotate(-40)"><g><circle cx="25" cy="25" r="10" stroke="#2255bb" fill="none" stroke-width="4" /><circle cx="55" cy="55" r="10" stroke="#2255bb" fill="none" stroke-width="4" /><animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360 40 40" to="0 40 40" dur="10s" repeatCount="indefinite"/></g></pattern></defs><rect width="100%" height="100%" fill="url(#cirlces)" /></svg>');
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  padding-top: 200px;
+.topface-text {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  padding: 80px 0 60px;
+  z-index: 100;
 }
+
+.topface-text h1 {
+  display: inline-block;
+  max-width: 1200px;
+  letter-spacing: 0.1em;
+}
+
+#topface-links, ul.nav {
+  list-style: none;
+}
+
+#topface-links {
+    display: inline-block;
+    padding: 0;
+}
+
+#topface-links li {
+    display: inline-block;
+}
+
+.topface-button {
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 1s;
+} 
+
+.topface-button:hover {
+  border: 1px solid #334433;
+  border-radius: 20px;
+  transition: 1s;
+  background: #eeffee;
+} 
 
 .about {
-  background: #33aa55 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="lines" patternUnits="userSpaceOnUse" width="80" height="80" patternTransform="rotate(-40)"><g><line x1="40" x2="40" y1="0" y2="80" stroke="#329553" stroke-width="40" /></g><animateTransform attributeName="patternTransform" attributeType="XML" type="rotate" from="0 500 500" to="360 500 500" dur="300s" repeatCount="indefinite"/></pattern></defs><rect width="100%" height="100%" fill="url(#lines)" ></rect></svg>');
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
+  /*background-size: cover;*/
+  background: #eeeeee;
+  
+  font-size: 20px;
+  line-height: 34px;
 }
 
 .portfolio {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="cirlces" patternUnits="userSpaceOnUse" width="70" height="70"><circle cx="15" cy="15" r="10" stroke="#2255bb" fill="none" stroke-width="4" /><circle cx="50" cy="50" r="10" stroke="#1144aa" fill="none" stroke-width="4" /><animateTransform attributeName="patternTransform" attributeType="XML" type="translate" from="0 0" to="140 70" dur="6s" repeatCount="indefinite"/></pattern></defs><rect width="100%" height="100%" fill="url(#cirlces)" /></svg>');
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
+  background: none;
+  /*background-size: cover;*/
+}
+
+#portfolioContainer {
+  text-align: center;
 }
 
 .contact {
-  background: #33aa55 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="cirlces" patternUnits="userSpaceOnUse" width="70" height="70" patternTransform="rotate(-3)"><circle cx="14" cy="15" r="25" stroke="#329553" fill="none" stroke-width="4" /><circle cx="54" cy="15" r="25" stroke="#329553" fill="none" stroke-width="4" /><circle cx="14" cy="54" r="25" stroke="#329553" fill="none" stroke-width="4" /><circle cx="54" cy="54" r="25" stroke="#329553" fill="none" stroke-width="4" /><animateTransform attributeName="patternTransform" attributeType="XML" type="rotate" from="0 500 500" to="360 500 500" dur="300s" repeatCount="indefinite"/></pattern></defs><rect width="100%" height="100%" fill="url(#cirlces)" /></svg>');
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
+  background: #eeeeee;
+  /*background-size: cover;*/
 }
 
-.jumbotron, .navbar {
-  /*background: #c6ecd2;*/
+.wrapper {
+  padding: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.nav li:hover, .btn:hover {
-  /*background: #b3e6c4;*/
+.thumbnail {
+  display: inline-block;
+  
 }
 
-.navbar-inner .nav li.active a {
-  /*color: yellow;*/
+nav.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10% 10% 10% 90%;
 }
-/*h2 {
-  background: white;
-  padding: 20px;
-  border-radius: 5px
-}*/
+
+ul.nav {
+  text-align: right;
+}
+
+ul.nav li a:hover {
+  background: #eeffee;
+}
+
+
+.thumbnail {
+  border: 1px #cccccc solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 2px;
+}
+
+.thumbnail-img {
+  max-width: 70vw;
+  border-radius: 10px 10px 0 0;
+}
+
+/*********************** face ***********************/
 
 #face {
+  position: relative;
+  top: 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+} 
+
+#faceHolder {
   width: 200px;
+  height: 200px;
   border-radius: 50%;
   float: right;
+  background: #390505;
+  text-align: center;
 } 
+
+#face:hover {
+  animation: spin 2s linear running infinite;
+  transform: translate3d(0, 0, 500px);
+  backface-visibility: hidden;
+  backface-visibility: visible;
+  /*background: #ffeecc;*/
+}
+
+#return-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@-webkit-keyframes spin {
+  0%{
+    -webkit-transform: rotate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 180, 0);
+  }
+}
+
+/*#portfolioContainer {
+  
+}*/
+
+/* pseudo classes */
+
+::-moz-selection {
+  background: #eeffee;
+  color: #334433;
+}
+::selection {
+  background: #eeffee;
+  color: #334433;
+}
+
+/* media */
+
+@media (max-width: 1400px){
+  .topface {
+    font-size: 25px;
+    font-size: 3vw;
+  }
+
+  .topface-text h1, h1 {
+    font-size: 100px;
+    font-size: 8vw;
+  }
+  
+}
+
+@media (max-width: 1000px) {
+    #face {
+    width: 140px;
+    height: 140px;
+    top: 5px;
+    width: 18vw;
+    height: 18vw;
+    top: 1vw;
+    
+  } 
+
+  #faceHolder {
+    width: 150px;
+    height: 150px;
+    width: 20vw;
+    height: 20vw;
+  } 
+}
+
+@media(max-width: 800px) {
+  #topface-links li {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .topface {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+    .topface-text h1 {
+      font-size: 40px;
+      font-size: 10vw;
+  }
+  .topface-image {
+    bottom: 30px;
+  }
+
+  nav.navbar {
+    background: none;
+    margin: 5px;
+    padding: 5px;
+    border-radius: none;
+  }
+
+  ul.nav li a{
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px 20px;
+    margin-bottom: 5px;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .topface-text h1 {
+      font-size: 40px;
+  }
+
+  #face {
+    width: 90px;
+    height: 90px;
+    top: 5px;
+  } 
+
+  #faceHolder {
+    width: 100px;
+    height: 100px;
+  }
+
+}

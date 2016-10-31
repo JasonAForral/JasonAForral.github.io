@@ -61,7 +61,9 @@ function populatePortfolioItem(data) {
   var $item = $('<div>').attr('class', 'thumbnail col-xs-12 col-sm-6 col-md-4')
     .appendTo($portfolio)
 
-  var $anchor = $('<a>').attr('href', data.url)
+  var $anchor = $('<a>')
+    .attr('href', data.url)
+    .attr('target', '_blank')
     .appendTo($item)
 
   $('<img>').attr({

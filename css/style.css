@@ -4,7 +4,7 @@
 
 html {
   color: #222222;
-  font: 300 14px/24px "Open Sans", open-sans, sans-serif;
+  font: 100 14px/24px "Open Sans", open-sans, sans-serif;
   overflow-y: scroll;
   height: 100%;
   background: #222222;
@@ -39,6 +39,7 @@ a:active {
 }
 
 p {
+  font-weight: 100;
   font-family: 'Raleway', 'Open Sans', sans-serif;
 }
 
@@ -53,6 +54,11 @@ p {
   padding: 0 0 60px;
   font: 400 30px/1 'Open Sans', open-sans, sans-serif;
   font: 400 2vw/1  'Open Sans', open-sans, sans-serif;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(white), to(#dddddd));
+  background-image: -webkit-linear-gradient(top left, #ffffff, #dddddd);
+  background-image: -moz-linear-gradient(top left, #ffffff, #dddddd);
+  background-image: linear-gradient(to right bottom, #ffffff, #dddddd);;
 }
 
 /*.topface-image {
@@ -68,12 +74,11 @@ p {
   display: table-cell;
   text-align: center;
   padding: 80px 0 60px;
-  z-index: 100;
 }
 
 .topface-text h1 {
   display: inline-block;
-  max-width: 1200px;
+  max-width: 1280px;
   letter-spacing: 0.1em;
 }
 
@@ -95,6 +100,7 @@ p {
   border-radius: 10px;
   padding: 10px 20px;
   transition: 1s;
+  background: #eeeeee;
 } 
 
 .topface-button:hover {
@@ -127,8 +133,13 @@ p {
 }
 
 .wrapper {
-  padding: 60px;
-  max-width: 1200px;
+  padding: 60px 0;
+}
+
+
+.wrapper-inner {
+  max-width: 1280px;
+  padding: 0 50px;
   margin: 0 auto;
 }
 
@@ -138,17 +149,22 @@ p {
 }
 
 nav.navbar {
-  background: rgba(255, 255, 255, 0.8);
   margin: 5px;
   padding: 5px;
-  border-radius: 10% 10% 10% 90%;
 }
 
 ul.nav {
   text-align: right;
 }
 
-ul.nav li a:hover {
+.nav a{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px 20px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+}
+
+.nav a:hover {
   background: #eeffee;
 }
 
@@ -192,11 +208,12 @@ ul.nav li a:hover {
   /*background: #ffeecc;*/
 }
 
-#return-to-top {
+/*#return-to-top {
   position: fixed;
   right: 10px;
   bottom: 10px;
-}
+  z-index: 2;
+}*/
 
 @keyframes spin {
   0%{
@@ -234,10 +251,6 @@ ul.nav li a:hover {
   }
 }
 
-/*#portfolioContainer {
-  
-}*/
-
 /* pseudo classes */
 
 ::-moz-selection {
@@ -265,14 +278,18 @@ ul.nav li a:hover {
 }
 
 @media (max-width: 1000px) {
-    #face {
+
+  .wrapper-inner {
+    padding: 0 5vw;
+  }
+  
+  #face {
     width: 140px;
     height: 140px;
     top: 5px;
     width: 18vw;
     height: 18vw;
     top: 1vw;
-    
   } 
 
   #faceHolder {
@@ -287,6 +304,9 @@ ul.nav li a:hover {
   #topface-links li {
     display: block;
   }
+  .wrapper {
+  padding: 40px 0;
+}
 }
 
 @media (max-width: 700px) {
@@ -294,32 +314,22 @@ ul.nav li a:hover {
     font-size: 20px;
     margin-bottom: 0;
   }
-    .topface-text h1 {
-      font-size: 40px;
-      font-size: 10vw;
+  .topface-text h1 {
+    font-size: 40px;
+    font-size: 10vw;
   }
   .topface-image {
     bottom: 30px;
-  }
-
-  nav.navbar {
-    background: none;
-    margin: 5px;
-    padding: 5px;
-    border-radius: none;
-  }
-
-  ul.nav li a{
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 20px 20px;
-    margin-bottom: 5px;
-    padding: 0 5px;
   }
 }
 
 @media (max-width: 500px) {
   .topface-text h1 {
       font-size: 40px;
+  }
+
+  .wrapper-inner {
+    padding: 0 25px;
   }
 
   #face {
@@ -334,3 +344,4 @@ ul.nav li a:hover {
   }
 
 }
+

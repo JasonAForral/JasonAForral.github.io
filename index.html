@@ -16,23 +16,15 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c
 <body>
 
   <header>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
-          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-            aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>-->
-          <a class="navbar-brand" href="#">Jason A. Forral</a>
+        <div class="nav navbar-header">
+          <a class="navbar-brand" href="#home">Jason A. Forral</a>
           <a class="navbar-brand" target="_blank" href="https://linkedin.com/in/JasonAForral"><i class="fa fa-linkedin fa-lg"></i></a>
           <a class="navbar-brand" target="_blank" href="https://github.com/JasonAForral"><i class="fa fa-github fa-lg"></i></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -43,8 +35,8 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c
   </header>
 
   <main role="main" id="main">
-    <div id="home" class="section topface">
-      <div class="jumbotron topface-text">
+    <div id="home" class="topface">
+      <div class="topface-text">
         <h1 id="topface-h1">Jason A. Forral</h1>
         <p></p>
         <ul id="topface-links">
@@ -74,7 +66,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c
 
     <div id="about" class="section about">
       <div class="container wrapper">
-        <div class="panel panel-default text-right">
+        <div class="panel panel-default text-right wrapper-inner">
           <div class="panel-body">
             <div id="faceHolder"><img id="face" src="images/face4.jpg" /></div>
             <p>I have been programming since before learning Algebra, experimenting with every documentation example in QBasic. Later
@@ -98,7 +90,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c
 
     <div id="portfolio" class="section portfolio">
       <div class="container wrapper">
-        <div class="panel panel-default text-left">
+        <div class="panel panel-default text-left wrapper-inner">
           <div class="panel-body">
             <div id="portfolioContainer">
             </div>
@@ -109,7 +101,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c
 
     <div id="contact" class="section contact">
       <div class="container wrapper">
-        <div class="panel panel-default">
+        <div class="panel panel-default wrapper-inner">
           <div class="panel-body">
             <div class="col-sm-3 col-sm-offset-9">
               <div class="btn-group-vertical" role="group" aria-label="...">
@@ -123,12 +115,10 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c
         </div>
       </div>
     </div>
-
-    <div id="return-to-top"><a href="#home">top</a></div>
-
   </main>
+
   <footer>
-    <div class="container wrapper">2016 Jason Forral
+    <div class="container wrapper-inner">2016 Jason Forral
     </div>
   </footer>
 
